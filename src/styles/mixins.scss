@@ -1,0 +1,19 @@
+@import "./vars";
+
+@mixin init {
+    @media screen and (min-width: map-get(vars.$breakpoint, init)) {
+      @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (min-width: map-get(vars.$breakpoint, mobile)) {
+      @content;
+    }
+}
+  
+  @mixin desktop {
+    @media screen and (min-width: map-get(vars.$breakpoint, desktop)) {
+      @content;
+    }
+}

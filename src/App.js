@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Header from './components/Header';
+import BlocksWrapper from './components/BlocksWrapper';
+
+import {IntlProvider } from 'react-intl';
+import { fr as French } from './languages/fr';
+import { en as English } from './languages/en';
+
+import { useSelector } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+
 function App() {
+
+const selectedLanguage = useSelector((state) => state.language);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <BrowserRouter>
+          <IntlProvider messages={selectedLanguage == 'FR' ? French : English}>
+            <Header />
+            <BlocksWrapper />
+          </IntlProvider>
+        </BrowserRouter>
+      </div>
   );
 }
 

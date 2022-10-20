@@ -1,0 +1,67 @@
+@use 'src/styles/vars';
+@import 'src/styles/mixins';
+
+header {
+    background-color: vars.$bg;
+
+    @include init {
+        height: 15vh;
+    }
+
+    @include mobile {
+        height: 20vh;
+    }
+
+    @include desktop {
+        height: 25vh;
+    }
+
+    .language_selection {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        span {
+            color: vars.$word-important;
+            font-weight: bold;
+        }
+    }
+
+    .intro {
+        text-align: start;
+        margin-top: 1em;
+        font-size: 1.4em;
+
+        @keyframes h1-animation {
+            from {
+                filter: blur(10px);
+            }
+            to {
+                filter: blur(0);
+            }
+        }
+
+        h1 {
+            animation-name: h1-animation;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+
+            @include init {
+                font-size: 1em;
+            }
+
+            @include mobile {
+                font-size: 1.5em;
+            }
+
+            @include desktop {
+                font-size: 2em;
+            }
+        }
+
+        &__text--important {
+            color: vars.$word-important;
+            font-style: italic;
+        }
+    }
+}
