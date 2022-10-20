@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/exercice-infomaniak/static/css/main.4a6a005f.css",
-    "main.js": "/exercice-infomaniak/static/js/main.06260d87.js",
+    "main.css": "/exercice-infomaniak/static/css/main.34d900fa.css",
+    "main.js": "/exercice-infomaniak/static/js/main.47a2df05.js",
     "static/media/Rectangle.png": "/exercice-infomaniak/static/media/Rectangle.f37bed6a43a45e931431.png",
     "static/media/Group 50122.png": "/exercice-infomaniak/static/media/Group 50122.a99800a405793a4a6224.png",
     "static/media/Group 50123.png": "/exercice-infomaniak/static/media/Group 50123.290a6342799d9733a64e.png",
     "static/media/Group 50161.png": "/exercice-infomaniak/static/media/Group 50161.1904861dde41451faf2a.png",
     "index.html": "/exercice-infomaniak/index.html",
-    "main.4a6a005f.css.map": "/exercice-infomaniak/static/css/main.4a6a005f.css.map",
-    "main.06260d87.js.map": "/exercice-infomaniak/static/js/main.06260d87.js.map"
+    "main.34d900fa.css.map": "/exercice-infomaniak/static/css/main.34d900fa.css.map",
+    "main.47a2df05.js.map": "/exercice-infomaniak/static/js/main.47a2df05.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a6a005f.css",
-    "static/js/main.06260d87.js"
+    "static/css/main.34d900fa.css",
+    "static/js/main.47a2df05.js"
   ]
 }
