@@ -49,11 +49,7 @@ const BlocksWrapper = () => {
     };
 
     return (
-        <main>
-            <Container 
-                maxWidth='xl'
-                className='container'
-            >
+        <main className='container'>
                 {blocksData.map((item, index) => 
                     <Box className='container__box'>
                         <div className='bg'>
@@ -74,7 +70,6 @@ const BlocksWrapper = () => {
                         </div> 
                     </Box>
                 )}
-            </Container>
         </main> 
     )
 }

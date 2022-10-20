@@ -3,18 +3,8 @@
 
 header {
     background-color: vars.$bg;
-
-    @include init {
-        height: 15vh;
-    }
-
-    @include mobile {
-        height: 20vh;
-    }
-
-    @include desktop {
-        height: 25vh;
-    }
+    width: 75%;
+    margin: auto;
 
     .language_selection {
         display: flex;
@@ -47,11 +37,11 @@ header {
             animation-fill-mode: forwards;
 
             @include init {
-                font-size: 1em;
+                font-size: 0.8em;
             }
 
             @include mobile {
-                font-size: 1.5em;
+                font-size: 1.2em;
             }
 
             @include desktop {

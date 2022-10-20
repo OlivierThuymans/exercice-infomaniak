@@ -21,7 +21,6 @@ const Header = () => {
     } 
 
     return (
-        <Container maxWidth='xl'>
             <header>
                 <div className='language_selection'>
                     <span>FR</span><Switch color='default' onChange={handleSwitchOnChange} /><span>EN</span>
@@ -35,7 +34,6 @@ const Header = () => {
                     /></h1> 
                 </div>
             </header>
-        </Container>
     )
 }
 
